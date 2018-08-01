@@ -71,7 +71,7 @@ var makeOrder = function () {
 
     // JSON.parse(localStorage.getItem('order'));
 
-    // var list = document.querySelector('.coffeeOrders');
+     var list = document.querySelector('.coffeeOrders');
     // row.appendChild(deleteButton);
     // row.appendChild(textContainer);
     // list.appendChild(row);
