@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>coffeerun</title>
+    <link rel="stylesheet" href="coffeerun.css">
+  </head>
+  <body class="container">
+    <header>
+      <h1>CoffeeRun</h1>
+    </header>
+    <section>
+      <div class="panel-default">
+        <div class="panel-body">
+          <form data-coffee-order="form" class='form'>
+            <div class="form-group">
+              <label> 
+                Coffee Order
+                <input class="nameInput"  name="coffee" autofocus>
+              </label>
+            </div>
+            <div class="form-group">
+              <label> 
+                Email
+                <input class="emailInput" type="email" name="emailAddress" value="" placeholder="dr@who.com">
+              </label>  
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="short">
+                Short
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="tall" checked>
+                Tall
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="grande">
+                Grande
+              </label>
+            </div>
+            <div class="form-group"> 
+              <label for="flavorShot">Flavor Shot</label>
+              <select id="flavorShot" class="flavor-control" name="flavor">
+                <option value="">None</option>
+                <option value="caramel">Caramel</option>
+                <option value="almond">Almond</option>
+                <option value="mocha">Mocha</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>
+                Caffeine Rating
+                <input name="strength"  type="range" value="30">
+              </label>
+            </div>
+            <button type="submit" class="btnSubmit">Submit</button>
+            <button type="reset" class="btnReset">Reset</button>
+          </form>
+          <div class="newOrders">
+            <ul class="coffeeOrders"> </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="coffeerun.js" charset="utf-8"></script>
+  </body>
+</html>
